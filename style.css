@@ -2,52 +2,70 @@
     font-family: "Jersey 25 Charted", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .gatomenu{
-    margin-left: 10px;
-    margin-top: 30px;
+}
+
+.item1 { grid-area: header; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  gap: 10px;
+  background-color: #B0A695;
+  padding: 20px;
+}
+
+.grid-container > div {
+  background-color: #F3EEEA;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 30px;
+}
+
+.head{
+    font-size: 36px;
+    vertical-align: sub ;
+    font-family: "Jersey 25 Charted";
+}
+
+/* GRID ABOVE*/
+
+body{
+    background-color: #EBE3D5;
+}
+
+.item2 {
+    grid-area: menu;
+    display: flex;
+    align-items: center; 
+}
+
+.item3 {
+    grid-area: main;
+    display: flex;
+    align-items: center; 
+    width: auto;
+    background-color: #EBE3D5;
+}
+
+.gatomenu {
+    margin-left: -30px;
+    margin-right: 5px; 
     width: 50px;
+    height: auto; 
     border-radius: 30%;
     border: 5px solid #776B5D;
 }
 
 .mainitem{
     font-size: 36px;
-    margin-left: 10px;
-    margin-top: -10px;
+    vertical-align: 15px;
     font-family: "Jersey 25 Charted";
 }
 
-.container {
-    display: flex;
-}
-
-.container {
-    background-color: #EBE3D5;
-}
-
-.left-section { 
-    background-color: #B0A695;
-    float: left;
-    width: 20%;
-    height: 100%;
-}
-
-.icon{
-    font-size: 40px;
-    vertical-align: middle;
-}
-
 .listmenu{
-    list-style-type: none;
-    margin-left: -38px;
-    font-size: 30px ;
-}
-.menuitem{
-    font-size: 36px;
-    vertical-align: top;
-    margin-left: 10px;
-    align-items: center;
+    margin-left: -60px;
     font-family: "Jersey 25 Charted";
 }
