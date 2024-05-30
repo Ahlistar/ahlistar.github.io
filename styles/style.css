@@ -69,3 +69,14 @@ body{
     margin-left: -60px;
     font-family: "Jersey 25 Charted";
 }
+
+a:link {
+    color: #776B5D;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #776B5D;
+    background-color: transparent;
+    text-decoration: none;
+  }
