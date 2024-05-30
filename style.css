@@ -1,6 +1,56 @@
-.gatomenu{
-
+.jersey-25-charted-regular {
+    font-family: "Jersey 25 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .gatomenu{
+    margin-left: 10px;
+    margin-top: 30px;
     width: 50px;
     border-radius: 30%;
-    
+    border: 5px solid #776B5D;
+}
+
+.mainitem{
+    font-size: 36px;
+    margin-left: 10px;
+    margin-top: -10px;
+    font-family: "Jersey 25 Charted";
+}
+
+.container {
+    display: flex;
+}
+
+.container {
+    background-color: #EBE3D5;
+    width: 80%;
+    margin: 0 auto;
+    float: left;
+}
+
+.left-section { 
+    background-color: #B0A695;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.icon{
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.listmenu{
+    list-style-type: none;
+    margin-left: -38px;
+    font-size: 30px ;
+}
+.menuitem{
+    font-size: 36px;
+    vertical-align: top;
+    margin-left: 10px;
+    align-items: center;
+    font-family: "Jersey 25 Charted";
 }
