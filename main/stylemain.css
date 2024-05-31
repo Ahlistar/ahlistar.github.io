@@ -13,12 +13,12 @@
     'menu main main main main main'
     'menu main main main main main';
   gap: 10px;
-  background-color: #B0A695;
+  background-color: #af9f9f;
   padding: 20px;
 }
 
 .grid-container > div {
-  background-color: #F3EEEA;
+  background-color: #fff9f9;
   text-align: center;
   padding: 50px 0;
   font-size: 30px;
@@ -33,13 +33,14 @@
 /* GRID ABOVE*/
 
 body{
-    background-color: #EBE3D5;
+    background-color: #af9f9f;
 }
 
 .item2 {
     grid-area: menu;
     display: flex;
-    align-items: center; 
+    align-items: top; 
+    justify-content: center;
 }
 
 .item3 {
@@ -48,6 +49,21 @@ body{
     align-items: center; 
     width: auto;
     background-color: #EBE3D5;
+    justify-content: center;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 2s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .gatomenu {
@@ -56,7 +72,7 @@ body{
     width: 50px;
     height: auto; 
     border-radius: 30%;
-    border: 5px solid #776B5D;
+    border: 5px solid #fae3e3;
 }
 
 .mainitem{

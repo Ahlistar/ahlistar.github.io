@@ -1,51 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles/style.css">
-
-<title>Lew!</title>
- <!-- ICONS -->
- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
- <!-- ICONS / FONT -->
- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+25+Charted">
- <!-- FONT -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #776B5D;">
+<body>
 
-<div class="grid-container">
-    <!-- HEADER -->
-  <div class="item1">
-    <span class="head"> Mai Websit :D</span>
-  </div>
-   <!-- MENU -->
-  <div class="item2">
-        <ul style="list-style: none;">
-            <li>
-                <img src="sextech jayce.png" alt="sextech jayce" class="gatomenu">
-                <span class="mainitem"> Main :3</span> 
-            </li>
-            <li> <p>    </p></li>
-            <li class="listmenu">
-                <a href="#" class='bx bxs-book-heart'></a><span>books :3</span>
-            </li>
-            <li class="listmenu">
-                <a href="#" class='bx bxs-baguette' style="margin-left: -17px;"></a><span>food :3</span>
-            </li>
-            <li class="listmenu">
-                <a href="#" class='bx bxs-game' style="margin-left: -9px;"></a><span>gaem :3</span>
-            </li>
-            <li class="listmenu">
-                <a href="#" class='bx bxs-movie-play' style="margin-left: 1px;"></a><span>amime :3</span>
-            </li>
-        </ul>
-    </div>
-   <!-- MAIN -->
-    <div class="item3"> 
-    
-    </div>  
+<div class="pulser" id="pulser"></div>
 
-</div>
+<script>
+  // esto se hace apenas corre el coso (osea el website)
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var pulser = document.getElementById('pulser');
+    pulser.classList.add('visible');
+
+    // dsp de medio seg, hace que el circulito sea invisible
+    setTimeout(function() {
+      pulser.classList.remove('visible');
+    }, 500);
+
+    // el pulser se expande hasta cubrir la pantalla
+    setTimeout(function() {
+      pulser.style.transition = "all 1s ease-in-out";
+      pulser.style.width = "200vw";
+      pulser.style.height = "200vh";
+      pulser.style.borderRadius = "0";
+      pulser.style.transform = "translate(-50%, -50%)";
+      pulser.style.background = "#fae3e3";
+    }, 1000); 
+
+    // dsp de esto ^ le pone el tag "Finished", cambia el color del fondo y manda a main.html
+    setTimeout(function() {
+      pulser.classList.add('finished');
+      document.body.style.backgroundColor = "#fae3e3";
+      setTimeout(function() {
+        window.location.href = "main/main.html";
+      }, 0);
+    }, 2500);
+  });
+</script>
 
 </body>
 </html>
